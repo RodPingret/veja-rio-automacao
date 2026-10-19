@@ -41,7 +41,6 @@ A API REST do site permitia leitura, mas a escrita exigia uma autenticação que
 ## Estrutura
 
 ```
-src/
 ├── verificar_status.gs   # consulta de status via Google Places API
 └── marcar_fechados.js    # marcação em lote no WordPress
 ```
@@ -50,7 +49,7 @@ src/
 
 **Verificação**
 1. Crie uma planilha Google com uma aba **Estabelecimentos** e os nomes na coluna A, a partir da linha 2.
-2. Abra **Extensões > Apps Script** e cole o conteúdo de `src/verificar_status.gs`.
+2. Abra **Extensões > Apps Script** e cole o conteúdo de `verificar_status.gs`.
 3. Em **Configurações do projeto > Propriedades do script**, crie `GOOGLE_MAPS_API_KEY` com a sua chave da Google Places API.
 4. Execute `verificarEstabelecimentos`. O resultado aparece em uma nova aba.
 
